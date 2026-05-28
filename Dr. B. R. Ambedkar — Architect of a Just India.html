@@ -1,0 +1,1318 @@
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. B. R. Ambedkar — Architect of a Just India</title>
+<meta name="description" content="A museum-style educational page about Dr. B. R. Ambedkar — his life, ideas, constitutional work, and lasting significance for all Indians.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<style>
+  /* ─── CSS Variables ─────────────────────────────────────────── */
+  :root {
+    --cream:       #F7F2EA;
+    --parchment:   #EDE3CE;
+    --parchment2:  #DDD0B3;
+    --text:        #1C1108;
+    --text-soft:   #3D2B18;
+    --text-muted:  #7A6347;
+    --gold:        #8C6A16;
+    --gold-light:  #C49A34;
+    --navy:        #1A2C52;
+    --navy-light:  #2E4A82;
+    --rule:        #C9B896;
+    --red-earth:   #8B3A22;
+    --blue-ash:    #D6DFEE;
+    --serif-display: 'Playfair Display', Georgia, serif;
+    --serif-body:    'Crimson Pro', 'Georgia', serif;
+    --serif-alt:     'IM Fell English', Georgia, serif;
+    --max-prose:   68ch;
+    --max-page:    1080px;
+  }
+
+  /* ─── Reset & Base ─────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    background: var(--cream);
+    color: var(--text);
+  }
+
+  body {
+    font-family: var(--serif-body);
+    font-weight: 400;
+    line-height: 1.75;
+    background: var(--cream);
+    overflow-x: hidden;
+  }
+
+  /* ─── Typography ────────────────────────────────────────────── */
+  h1, h2, h3, h4 {
+    font-family: var(--serif-display);
+    line-height: 1.2;
+    color: var(--navy);
+  }
+
+  p { margin-bottom: 1.2em; color: var(--text-soft); }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: var(--gold);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
+  a:hover { color: var(--navy); }
+
+  strong { font-weight: 600; color: var(--text); }
+
+  em { font-style: italic; }
+
+  /* ─── Layout Helpers ────────────────────────────────────────── */
+  .page-wrap {
+    max-width: var(--max-page);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .prose-wrap {
+    max-width: var(--max-prose);
+    margin: 0 auto;
+  }
+
+  /* ─── HERO ──────────────────────────────────────────────────── */
+  .hero {
+    background: var(--navy);
+    color: #fff;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 40%, rgba(140,106,22,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 70%, rgba(26,44,82,0.6) 0%, transparent 70%),
+      linear-gradient(175deg, #0D1B38 0%, #1A2C52 55%, #2C1A08 100%);
+    z-index: 0;
+  }
+
+  /* Decorative Ashoka-wheel-inspired motif */
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    width: 55vmin;
+    height: 55vmin;
+    border-radius: 50%;
+    border: 1px solid rgba(196,154,52,0.14);
+    box-shadow:
+      0 0 0 20px rgba(196,154,52,0.06),
+      0 0 0 40px rgba(196,154,52,0.04),
+      0 0 0 70px rgba(196,154,52,0.025);
+    z-index: 0;
+  }
+
+  .hero-image-col {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 42%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .hero-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    filter: grayscale(20%) sepia(20%) brightness(0.72) contrast(1.05);
+    mix-blend-mode: luminosity;
+    opacity: 0.55;
+  }
+
+  .hero-image-col::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--navy) 0%, rgba(26,44,82,0.3) 50%, transparent 80%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 6rem 1.5rem 5rem;
+    max-width: var(--max-page);
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-kicker {
+    font-family: var(--serif-body);
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .hero-kicker::before {
+    content: '';
+    display: inline-block;
+    width: 2rem;
+    height: 1px;
+    background: var(--gold-light);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.08;
+    color: #F7F0E4;
+    max-width: 14ch;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-subtitle {
+    font-family: var(--serif-alt);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: rgba(247,240,228,0.7);
+    max-width: 42ch;
+    margin-bottom: 2rem;
+    line-height: 1.55;
+  }
+
+  .hero-dates {
+    font-family: var(--serif-body);
+    font-size: 0.88rem;
+    letter-spacing: 0.1em;
+    color: rgba(247,240,228,0.45);
+    font-weight: 300;
+  }
+
+  .hero-scroll-hint {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--serif-body);
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(247,240,228,0.35);
+  }
+  .hero-scroll-hint svg {
+    animation: scrollBob 2s ease-in-out infinite;
+  }
+  @keyframes scrollBob {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(4px); }
+  }
+
+  /* ─── NAV BAR ────────────────────────────────────────────────── */
+  .toc-nav {
+    background: var(--navy);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+  }
+  .toc-nav-inner {
+    max-width: var(--max-page);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .toc-nav-inner::-webkit-scrollbar { display: none; }
+  .toc-nav a {
+    font-family: var(--serif-body);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(247,240,228,0.5);
+    text-decoration: none;
+    padding: 0.9rem 0.9rem;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    flex-shrink: 0;
+  }
+  .toc-nav a:hover {
+    color: var(--gold-light);
+    border-bottom-color: var(--gold-light);
+  }
+
+  /* ─── INTRO BAND ─────────────────────────────────────────────── */
+  .intro-band {
+    background: var(--navy);
+    color: #F7F0E4;
+    padding: 4.5rem 1.5rem;
+  }
+  .intro-band .prose-wrap {
+    text-align: center;
+  }
+  .intro-band p {
+    font-family: var(--serif-alt);
+    font-style: italic;
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+    line-height: 1.65;
+    color: rgba(247,240,228,0.85);
+    max-width: 58ch;
+    margin: 0 auto 1.1em;
+  }
+  .intro-band .source-attr {
+    font-family: var(--serif-body);
+    font-style: normal;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    color: rgba(247,240,228,0.4);
+    margin-top: 1.5rem;
+  }
+  .intro-band .source-attr a { color: var(--gold-light); }
+
+  /* ─── SECTION BASE ───────────────────────────────────────────── */
+  .section {
+    padding: 5rem 1.5rem;
+    border-bottom: 1px solid var(--parchment2);
+  }
+  .section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-family: var(--serif-body);
+    font-size: 0.74rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .section-label::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 3rem;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+
+  .section h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+    font-weight: 600;
+    line-height: 1.18;
+    margin-bottom: 1.6rem;
+    color: var(--navy);
+  }
+
+  .section h3 {
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+    font-weight: 600;
+    margin: 2.2rem 0 0.8rem;
+    color: var(--navy);
+  }
+
+  /* ─── PULL QUOTE ─────────────────────────────────────────────── */
+  .pull-quote {
+    margin: 3rem auto;
+    max-width: 58ch;
+    padding: 2rem 2.5rem;
+    border-left: 3px solid var(--gold);
+    background: rgba(140,106,22,0.06);
+    position: relative;
+  }
+  .pull-quote::before {
+    content: '\201C';
+    font-family: var(--serif-display);
+    font-size: 5rem;
+    line-height: 0;
+    position: absolute;
+    top: 2.2rem;
+    left: 1rem;
+    color: var(--gold);
+    opacity: 0.25;
+  }
+  .pull-quote p {
+    font-family: var(--serif-alt);
+    font-style: italic;
+    font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+    line-height: 1.65;
+    color: var(--navy);
+    margin-bottom: 0.8em;
+  }
+  .pull-quote .attribution {
+    font-family: var(--serif-body);
+    font-style: normal;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  /* ─── HIGHLIGHTED FACT ───────────────────────────────────────── */
+  .fact-card {
+    background: var(--navy);
+    color: #F7F0E4;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+    position: relative;
+  }
+  .fact-card-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    font-family: var(--serif-body);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .fact-card p {
+    font-family: var(--serif-display);
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+    color: #F7F0E4;
+    line-height: 1.55;
+  }
+  .fact-card p strong { color: var(--gold-light); }
+
+  /* ─── TWO-COLUMN GRID ────────────────────────────────────────── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  @media (max-width: 700px) {
+    .two-col { grid-template-columns: 1fr; gap: 2rem; }
+  }
+
+  /* ─── SIDE NOTE ──────────────────────────────────────────────── */
+  .with-sidenote {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 220px;
+    gap: 3rem;
+    align-items: start;
+  }
+  @media (max-width: 760px) {
+    .with-sidenote { display: block; }
+    .sidenote { margin-top: 2rem; }
+  }
+  .sidenote {
+    background: var(--parchment);
+    border-top: 2px solid var(--gold);
+    padding: 1.4rem 1.5rem;
+  }
+  .sidenote-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: var(--serif-body);
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+  }
+  .sidenote p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text-soft);
+  }
+
+  /* ─── IMAGE BLOCK ────────────────────────────────────────────── */
+  .image-block {
+    margin: 3rem auto;
+  }
+  .image-block img {
+    width: 100%;
+    display: block;
+    filter: grayscale(15%) sepia(10%);
+  }
+  .image-caption {
+    font-family: var(--serif-body);
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    padding: 0.7rem 1rem;
+    border-left: 2px solid var(--parchment2);
+    margin-top: 0.4rem;
+  }
+
+  /* ─── TIMELINE ───────────────────────────────────────────────── */
+  .timeline {
+    padding: 5rem 1.5rem;
+    background: var(--parchment);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .timeline-grid {
+    display: grid;
+    gap: 0;
+    position: relative;
+    margin-top: 3rem;
+  }
+  .timeline-grid::before {
+    content: '';
+    position: absolute;
+    left: 90px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--rule);
+  }
+  @media (max-width: 540px) {
+    .timeline-grid::before { left: 60px; }
+  }
+  .tl-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0 1.5rem;
+    padding-bottom: 2.2rem;
+    position: relative;
+  }
+  @media (max-width: 540px) {
+    .tl-item { grid-template-columns: 60px 1fr; gap: 0 1rem; }
+  }
+  .tl-year {
+    font-family: var(--serif-display);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--gold);
+    padding-top: 0.18em;
+    text-align: right;
+    padding-right: 1.5rem;
+  }
+  @media (max-width: 540px) { .tl-year { padding-right: 0.8rem; } }
+  .tl-dot {
+    position: absolute;
+    left: 87px;
+    top: 0.32em;
+    width: 7px;
+    height: 7px;
+    background: var(--gold);
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 540px) { .tl-dot { left: 57px; } }
+  .tl-content h4 {
+    font-family: var(--serif-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
+  }
+  .tl-content p {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  /* ─── CARD GRID ──────────────────────────────────────────────── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid var(--parchment2);
+    padding: 1.6rem;
+    position: relative;
+    transition: box-shadow 0.2s;
+  }
+  .card:hover { box-shadow: 0 4px 20px rgba(26,44,82,0.1); }
+  .card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+  .card h4 {
+    font-family: var(--serif-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+  .card p {
+    font-size: 0.88rem;
+    color: var(--text-soft);
+    line-height: 1.65;
+    margin: 0;
+  }
+  .card-accent {
+    height: 3px;
+    background: var(--gold);
+    width: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ─── DIVIDER ────────────────────────────────────────────────── */
+  .ornament {
+    text-align: center;
+    color: var(--gold-light);
+    font-size: 1.1rem;
+    letter-spacing: 0.5em;
+    opacity: 0.45;
+    margin: 2rem 0;
+    user-select: none;
+  }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2.5rem 0;
+  }
+
+  /* ─── CONSTITUTION SECTION ───────────────────────────────────── */
+  .constitution-band {
+    background: var(--navy);
+    padding: 5rem 1.5rem;
+  }
+  .constitution-band .section-label { color: var(--gold-light); }
+  .constitution-band .section-label::after { background: var(--gold-light); }
+  .constitution-band h2 {
+    color: #F7F0E4;
+    margin-bottom: 1.6rem;
+  }
+  .constitution-band p { color: rgba(247,240,228,0.78); }
+  .constitution-band h3 { color: var(--gold-light); }
+  .constitution-band .pull-quote {
+    border-left-color: var(--gold-light);
+    background: rgba(196,154,52,0.08);
+  }
+  .constitution-band .pull-quote p { color: #F7F0E4; }
+  .constitution-band .pull-quote .attribution { color: var(--gold-light); }
+  .constitution-band .pull-quote::before { color: var(--gold-light); opacity: 0.3; }
+
+  .article-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.5rem 0;
+  }
+  .article-pill {
+    background: rgba(196,154,52,0.15);
+    border: 1px solid rgba(196,154,52,0.35);
+    color: var(--gold-light);
+    font-family: var(--serif-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
+    letter-spacing: 0.05em;
+    transition: background 0.2s;
+  }
+  .article-pill:hover { background: rgba(196,154,52,0.25); }
+
+  /* ─── SOURCES SECTION ────────────────────────────────────────── */
+  .sources-section {
+    background: var(--parchment);
+    padding: 4.5rem 1.5rem;
+    border-top: 2px solid var(--rule);
+  }
+  .sources-list {
+    list-style: none;
+    margin-top: 1.8rem;
+  }
+  .sources-list li {
+    font-size: 0.88rem;
+    color: var(--text-soft);
+    line-height: 1.65;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--parchment2);
+    padding-left: 1.2rem;
+    position: relative;
+  }
+  .sources-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+  .sources-list li:last-child { border-bottom: none; }
+  .sources-list a { font-weight: 500; }
+
+  /* ─── FOOTER ─────────────────────────────────────────────────── */
+  footer {
+    background: var(--text);
+    color: rgba(247,240,228,0.45);
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  footer p {
+    font-family: var(--serif-body);
+    font-size: 0.82rem;
+    color: rgba(247,240,228,0.45);
+    margin-bottom: 0.4em;
+    line-height: 1.6;
+  }
+  footer a { color: rgba(196,154,52,0.7); }
+
+  /* ─── RESPONSIVE ─────────────────────────────────────────────── */
+  @media (max-width: 660px) {
+    .hero-image-col { display: none; }
+    .section { padding: 3.5rem 1.2rem; }
+    .pull-quote { padding: 1.5rem 1.5rem 1.5rem 1.8rem; }
+    .pull-quote::before { font-size: 3.5rem; top: 1.6rem; left: 0.6rem; }
+    .timeline { padding: 3.5rem 1.2rem; }
+    .constitution-band { padding: 3.5rem 1.2rem; }
+    .sources-section { padding: 3rem 1.2rem; }
+  }
+
+  /* ─── FOOTNOTE LINKS ─────────────────────────────────────────── */
+  sup a {
+    font-size: 0.65em;
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: 600;
+    padding: 0 1px;
+  }
+
+  /* ─── ACCESSIBILITY ──────────────────────────────────────────── */
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ HERO ═══════════════════════════════════ -->
+<header class="hero" id="top">
+  <div class="hero-image-col" aria-hidden="true">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Dr._Bhimrao_Ambedkar.jpg/250px-Dr._Bhimrao_Ambedkar.jpg" alt="Official portrait of Dr. B. R. Ambedkar" loading="eager">
+  </div>
+  <div class="hero-content page-wrap">
+    <div class="hero-kicker">A Museum of Ideas</div>
+    <h1>Dr. B. R.<br>Ambedkar</h1>
+    <p class="hero-subtitle">Scholar, jurist, economist, statesman — and the man who gave constitutional form to the idea that every Indian is equal.</p>
+    <p class="hero-dates">14 April 1891 — 6 December 1956</p>
+    <div class="hero-scroll-hint">
+      <svg width="14" height="18" viewBox="0 0 14 18" fill="none" aria-hidden="true">
+        <path d="M7 1v16M1 11l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      Scroll to read
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════ STICKY NAV ═════════════════════════════ -->
+<nav class="toc-nav" aria-label="Page sections">
+  <div class="toc-nav-inner">
+    <a href="#why-matters">Why He Matters</a>
+    <a href="#before">Before</a>
+    <a href="#scholar">The Scholar</a>
+    <a href="#dalits">For Dalits</a>
+    <a href="#constitution">Constitution</a>
+    <a href="#women">For Women</a>
+    <a href="#workers">Workers &amp; Others</a>
+    <a href="#resistance">Resistance</a>
+    <a href="#today">Today</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════ INTRO QUOTE ════════════════════════════ -->
+<div class="intro-band">
+  <div class="prose-wrap">
+    <p>"On the 26th of January 1950, we are going to enter into a life of contradictions. In politics we will have equality and in social and economic life we will have inequality."</p>
+    <p class="source-attr">— Dr. B. R. Ambedkar, address to the Constituent Assembly,
+      <a href="https://www.constitutionofindia.net/constitution_assembly_debates/volume/11/1949-11-25" target="_blank" rel="noopener">25 November 1949</a>.
+      He called this contradiction "a life of contradictions" and warned that if it was not resolved, democracy would be in danger.
+    </p>
+  </div>
+</div>
+
+<!-- ═══════════════════ SECTION 1: WHY HE MATTERS ══════════════ -->
+<section class="section" id="why-matters">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Introduction</div>
+      <h2>Why Ambedkar Matters to Every Indian</h2>
+
+      <p>When people speak of Dr. Bhimrao Ramji Ambedkar, the conversation often stays within a single frame: a leader of the Dalit community, a symbol of Dalit pride, a fighter against caste oppression. All of this is true. But it is not the whole picture.</p>
+
+      <p>Ambedkar was also the principal architect of the <a href="https://www.india.gov.in/my-government/constitution-india" target="_blank" rel="noopener">Constitution of India</a>. He was an economist who influenced India's monetary policy. He was a labour reformer who worked to protect factory workers and mining communities. He was one of the first Indian voices to argue systematically for women's equal rights in law. He was a thinker whose analysis of caste, democracy, and social justice remained decades ahead of mainstream political conversation.</p>
+
+      <p>His work touched the lives of every Indian — including millions who have never heard his name.</p>
+
+      <p>This page is an attempt to explain what he did, why it was difficult, and why it still matters.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 2: BEFORE ══════════════════════ -->
+<section class="section" id="before">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Historical Context</div>
+      <h2>The India He Was Born Into</h2>
+
+      <p>To understand what Ambedkar changed, it is necessary to understand what existed before his interventions. The India of the late nineteenth and early twentieth century was shaped by two overlapping systems of hierarchy: British colonial rule, and the internal social stratification of caste.</p>
+
+      <h3>The Weight of Untouchability</h3>
+
+      <p>Untouchability was not a polite social preference. It was a system of enforced exclusion that governed nearly every aspect of daily life. People classified as "untouchable" — roughly fifteen to sixteen percent of the population according to early twentieth-century census figures — were barred from drawing water from common wells, from entering temples, from using public roads in certain areas, and from sitting beside upper-caste children in schools.</p>
+
+      <p>The consequences were material as well as symbolic. Untouchable communities were confined to the lowest and most physically hazardous occupations: manual scavenging, tanning, sweeping. They were paid in kind rather than cash, lived in settlements physically separated from the rest of the village, and had little access to the legal system that might have offered redress.</p>
+
+      <div class="fact-card">
+        <div class="fact-card-label">Historical Record</div>
+        <p>The <a href="https://censusindia.gov.in/" target="_blank" rel="noopener" style="color:var(--gold-light)">Census of India, 1901</a> documented elaborate caste-based occupational restrictions across the subcontinent. In many regions, untouchable communities were required to make noise as they walked so that caste Hindus could avoid their shadow. These were not informal customs — they were enforced socially and sometimes legally.</p>
+      </div>
+
+      <h3>The Position of Women</h3>
+
+      <p>Hindu personal law as it stood in colonial India — a patchwork of scriptural interpretation and court precedent — left women in a position of systematic legal disadvantage. A widow generally could not inherit property in the same way a male heir could. Divorce was not available to Hindu women in most circumstances. Polygamy was legally permissible for Hindu men. A daughter's share in a family's property was substantially less than a son's, or nil.</p>
+
+      <h3>The Condition of Workers</h3>
+
+      <p>Industrial workers in colonial India — the majority of them lower-caste and Dalit — laboured under conditions with minimal legal protection. Mine workers, in particular, faced dangerous conditions with little recourse. The eight-hour working day was still not universal. Women in mines and factories had few protections specific to their needs.</p>
+
+      <p>This was the India Ambedkar was born into on 14 April 1891, in Mhow, in the Central Provinces (now in Madhya Pradesh). He was the fourteenth child of Subedar Ramji Maloji Sakpal and Bhimabai. The family belonged to the Mahar caste — classified as "untouchable" by the prevailing social order.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 3: THE SCHOLAR ═════════════════ -->
+<section class="section" id="scholar">
+  <div class="page-wrap">
+    <div class="with-sidenote">
+      <div class="prose-content">
+        <div class="section-label">Education &amp; Formation</div>
+        <h2>A Man Built by Exclusion and Learning</h2>
+
+        <p>Ambedkar's experience of caste humiliation was not abstract. As a boy, he was made to sit on a gunny sack in school, separate from other students. He was not allowed to drink from the school's water source. He carried these experiences not as wounds that destroyed him, but as evidence that required systematic analysis and systematic response.</p>
+
+        <p>His education was exceptional by any measure. He completed his undergraduate studies at <a href="https://www.elphinstone.ac.in/" target="_blank" rel="noopener">Elphinstone College, Bombay</a>, in 1912, on a scholarship from the Maharaja of Baroda. In 1913, he travelled to New York to study at <a href="https://www.columbia.edu/" target="_blank" rel="noopener">Columbia University</a>, where he came under the influence of the economist and social thinker John Dewey. In 1915, he completed his Master's dissertation. His 1916 paper, <em>Castes in India: Their Mechanism, Genesis and Development</em>, presented at a Columbia seminar, was one of the earliest rigorous sociological analyses of the caste system and remains in print today.</p>
+
+        <p>He subsequently studied at the <a href="https://www.lse.ac.uk/" target="_blank" rel="noopener">London School of Economics</a>, earning a Doctor of Science degree in 1923 for his thesis <em>The Problem of the Rupee: Its Origin and Its Solution</em>. This work — a serious contribution to monetary economics — is cited by the <a href="https://www.rbi.org.in/" target="_blank" rel="noopener">Reserve Bank of India</a> itself as one of the intellectual foundations of the proposal to establish a central bank for India. He was also called to the Bar from Gray's Inn, London, in 1923.</p>
+
+        <p>By the time he returned to India to practice law and public service, he held qualifications that very few Indians — of any caste — possessed. This was not incidental to his political authority. His intellectual credentials were armour against the dismissal that caste society routinely offered to Dalit voices.</p>
+
+        <div class="pull-quote">
+          <p>Cultivate the habit of reading. Let knowledge be the weapon with which you fight the social evils of your time.</p>
+          <div class="attribution">Dr. B. R. Ambedkar — widely attributed in his speeches to students</div>
+        </div>
+
+        <p>His doctoral dissertation at Columbia, <em>The Evolution of Provincial Finance in British India</em>, was a rigorous examination of colonial fiscal policy. This was not the work of a man studying India's problems from the outside — it was the work of someone who understood that economic structures and social structures were inseparable.</p>
+      </div>
+      <aside class="sidenote">
+        <div class="sidenote-label">Key Works</div>
+        <p><strong>Castes in India</strong> (1916) — Sociological analysis, Columbia University seminar paper.</p>
+        <p style="margin-top:0.9rem"><strong>The Problem of the Rupee</strong> (1923) — LSE doctoral thesis, influenced Reserve Bank of India's founding.</p>
+        <p style="margin-top:0.9rem"><strong>Annihilation of Caste</strong> (1936) — Undelivered address; one of the most important texts in Indian political thought.</p>
+        <p style="margin-top:0.9rem"><strong>The Buddha and His Dhamma</strong> (1956) — Published posthumously; his final major work.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 4: FOR DALITS ══════════════════ -->
+<section class="section" id="dalits">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Social Reform</div>
+      <h2>The Long War Against Untouchability</h2>
+
+      <p>Ambedkar's public life as a campaigner against untouchability began in the 1920s and proceeded on multiple fronts simultaneously: legal argument, organised protest, political negotiation, and the building of institutions.</p>
+
+      <h3>The Mahad Satyagraha, 1927</h3>
+
+      <p>In March 1927, Ambedkar led a march to the Chavadar tank in Mahad, Colaba district (now Raigad), to assert the right of "untouchable" communities to use public water sources. This right had technically been granted by a municipal resolution, but it had not been implemented. The action — peaceful, disciplined, and legally grounded — was one of the first mass civil rights actions in Indian history specifically organised by and for Dalit communities.</p>
+
+      <p>Later that year, at a conference in Mahad in December, a copy of the <em>Manusmriti</em> — the ancient Hindu legal text that codifies caste hierarchy and the subordination of women — was publicly burned. This was a symbolic statement about the nature of the laws that needed to change.</p>
+
+      <div class="image-block prose-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Deekshabhoomi_Nagpur.jpg" alt="Deekshabhoomi, Nagpur — site of Ambedkar&#39;s conversion to Buddhism in 1956" loading="lazy" onerror="this.style.display=&#39;none&#39;">
+        <div class="image-caption">
+          <strong>Deekshabhoomi, Nagpur.</strong> On 14 October 1956, Dr. Ambedkar led a mass conversion to Buddhism at this site, accompanied by hundreds of thousands of followers. The event was the culmination of two decades of his public argument that social liberation required a rejection of the caste system's religious foundations. Image: <a href="https://commons.wikimedia.org/wiki/File:Deekshabhoomi_Nagpur.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY-SA).
+        </div>
+      </div>
+
+      <h3>Annihilation of Caste, 1936</h3>
+
+      <p>In 1936, the <em>Jat-Pat-Todak Mandal</em> of Lahore — a reformist Hindu organisation — invited Ambedkar to deliver the presidential address at their annual conference. When they received the text of his prepared address in advance, they cancelled the conference. The address was too radical: it argued that the caste system could not be reformed from within, that its religious foundations had to be challenged directly, and that social equality was a prerequisite for political democracy.</p>
+
+      <p>Ambedkar published the address himself, as <a href="https://www.scribd.com/document/340152005/Annihilation-of-Caste-by-Dr-B-R-Ambedkar" target="_blank" rel="noopener"><em>Annihilation of Caste</em></a>. It became one of the most important texts in Indian political thought. Its central argument — that caste is not a social division of labour but a division of labourers, and that it degrades not only those at the bottom but the entire moral fabric of society — has shaped debates about caste and democracy for nearly a century.</p>
+
+      <div class="pull-quote">
+        <p>Caste is not merely a division of labour. It is also a division of labourers. Civilised society undoubtedly needs division of labour. But in no civilised society is division of labour accompanied by this unnatural division of labourers into watertight compartments.</p>
+        <div class="attribution">Dr. B. R. Ambedkar, <a href="https://www.scribd.com/document/340152005/Annihilation-of-Caste-by-Dr-B-R-Ambedkar" target="_blank" rel="noopener" style="color:var(--gold)">Annihilation of Caste</a>, 1936</div>
+      </div>
+
+      <h3>The Poona Pact, 1932</h3>
+
+      <p>In 1932, the British government's <em>Communal Award</em> granted separate electorates to "depressed class" voters — meaning they would vote in their own separate constituencies for representatives of their own communities. Mahatma Gandhi, in Yeravda Jail, began a fast unto death in protest, arguing that separate electorates would divide Hindu society.</p>
+
+      <p>The situation placed Ambedkar in an extraordinarily difficult position. He had fought for the political representation of Dalit communities. Separate electorates were one form of that. But Gandhi's fast, if it resulted in his death, would almost certainly provoke violence against Dalit communities across the country. After negotiations, the two men agreed on the <a href="https://www.mea.gov.in/in-focus-article.htm?18730" target="_blank" rel="noopener">Poona Pact of 24 September 1932</a>: reserved seats within joint electorates, with a larger number of reserved seats than the Communal Award had specified.</p>
+
+      <p>Ambedkar's assessment of this compromise remained troubled for the rest of his life. He acknowledged the larger number of reserved seats but believed that joint electorates, in which upper-caste voters would participate in selecting Dalit representatives, would compromise the independence of those representatives. The debate about his decision and its consequences continues among scholars.</p>
+
+      <h3>Article 17 of the Constitution</h3>
+
+      <p>The most direct legal intervention against untouchability came when Ambedkar, as chairman of the Constitution's Drafting Committee, ensured that the abolition of untouchability was written into the Constitution itself — not as a directive principle or aspiration, but as a fundamental right. <a href="https://www.constitutionofindia.net/articles/article-17-abolition-of-untouchability" target="_blank" rel="noopener"><strong>Article 17</strong></a> reads: <em>"Untouchability is abolished and its practice in any form is forbidden. The enforcement of any disability arising out of 'Untouchability' shall be an offence punishable in accordance with law."</em></p>
+
+      <p>This was a constitutional settlement of a question that reformers had debated for generations. For the first time, the state itself was made an enemy of caste-based exclusion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 5: CONSTITUTION ════════════════ -->
+<div class="constitution-band" id="constitution">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Constitutional Law</div>
+      <h2>Building a Nation on Equal Ground</h2>
+
+      <p>On 29 August 1947, the <a href="https://www.constitutionofindia.net/" target="_blank" rel="noopener" style="color:var(--gold-light)">Constituent Assembly of India</a> appointed Dr. Ambedkar as the chairman of its Drafting Committee — the body responsible for actually writing the Constitution. This was the most consequential appointment in modern Indian legal history.</p>
+
+      <p>The Constituent Assembly had debated fundamental questions of governance, rights, and representation for nearly three years. But it was the Drafting Committee that had to translate those debates into legal language precise enough to govern a nation of hundreds of millions of people, diverse in religion, language, ethnicity, and social position. Ambedkar guided that process through more than two years of meticulous work.</p>
+
+      <div class="pull-quote">
+        <p>However good a Constitution may be, it is sure to turn out bad because those who are called to work it, happen to be a bad lot. However bad a Constitution may be, it may turn out to be good if those who are called to work it, happen to be a good lot.</p>
+        <div class="attribution">Dr. B. R. Ambedkar, Constituent Assembly, <a href="https://www.constitutionofindia.net/constitution_assembly_debates/volume/11/1949-11-25" target="_blank" rel="noopener" style="color:var(--gold-light)">25 November 1949</a></div>
+      </div>
+
+      <h3>The Architecture of Equality</h3>
+
+      <p>The Constitution that emerged under Ambedkar's drafting hand contained provisions that were — in the context of 1950 — radical. The following articles, among others, reflect the direct imprint of his thinking:</p>
+
+      <div class="article-pills">
+        <a class="article-pill" href="https://www.constitutionofindia.net/articles/article-14-equality-before-law" target="_blank" rel="noopener">Art. 14 — Equality before Law</a>
+        <a class="article-pill" href="https://www.constitutionofindia.net/articles/article-15-prohibition-of-discrimination-on-grounds-of-religion-race-caste-sex-or-place-of-birth" target="_blank" rel="noopener">Art. 15 — Non-Discrimination</a>
+        <a class="article-pill" href="https://www.constitutionofindia.net/articles/article-16-equality-of-opportunity-in-matters-of-public-employment" target="_blank" rel="noopener">Art. 16 — Equal Opportunity</a>
+        <a class="article-pill" href="https://www.constitutionofindia.net/articles/article-17-abolition-of-untouchability" target="_blank" rel="noopener">Art. 17 — Abolition of Untouchability</a>
+        <a class="article-pill" href="https://www.constitutionofindia.net/articles/article-21-protection-of-life-and-personal-liberty" target="_blank" rel="noopener">Art. 21 — Right to Life</a>
+        <a class="article-pill" href="https://www.constitutionofindia.net/articles/article-23-prohibition-of-traffic-in-human-beings-and-forced-labour" target="_blank" rel="noopener">Art. 23 — No Forced Labour</a>
+        <a class="article-pill" href="https://www.constitutionofindia.net/articles/article-46-promotion-of-educational-and-economic-interests-of-scheduled-castes-scheduled-tribes-and-other-weaker-sections" target="_blank" rel="noopener">Art. 46 — Protect Weaker Sections</a>
+      </div>
+
+      <p>Article 15(1) prohibits the state from discriminating against any citizen on grounds including caste and sex. Article 15(4), introduced by the First Amendment, permits the state to make special provision for the advancement of socially and educationally backward classes — the constitutional foundation for reservations in education. Article 16(4) does the same for public employment.</p>
+
+      <p>These articles were not abstractions. They were the legal tools by which millions of people — women, Dalits, Adivasis, minorities — could claim rights that social and economic structures had denied them.</p>
+
+      <h3>The Preamble's Promise</h3>
+
+      <p>The Preamble to the Constitution — <em>"We, the People of India, having solemnly resolved to constitute India into a Sovereign, Democratic Republic and to secure to all its citizens: Justice, social, economic and political; Liberty of thought, expression, belief, faith and worship; Equality of status and of opportunity; and to promote among them all Fraternity assuring the dignity of the individual…"</em> — captures in brief form the constitutional philosophy that Ambedkar articulated at greater length in his drafting work and his speeches to the Assembly.</p>
+
+      <p>The word <strong>fraternity</strong> was Ambedkar's particular insistence. He argued that liberty and equality alone were insufficient without a sense of common humanity across caste and community lines. In his final speech to the Assembly on 25 November 1949, he spoke of fraternity as the principle that would make the other two real.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ SECTION 6: WOMEN ═══════════════════════ -->
+<section class="section" id="women">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Women's Rights</div>
+      <h2>For Women: The Unfinished Revolution</h2>
+
+      <p>Ambedkar's record on women's rights is less widely known than his work on caste, but it is substantial — and it cost him his cabinet position.</p>
+
+      <p>As India's first Law Minister in Nehru's cabinet from 1947, Ambedkar worked to draft a comprehensive codification and reform of Hindu personal law, which had never been systematically modernised. The proposed legislation came to be called the <strong>Hindu Code Bill</strong>.</p>
+
+      <h3>What the Hindu Code Bill Proposed</h3>
+
+      <div class="card-grid" style="margin-bottom:2rem;">
+        <div class="card">
+          <div class="card-accent"></div>
+          <h4>Right to Divorce</h4>
+          <p>The Bill would have given Hindu women the legal right to seek divorce — a right they did not have under existing codified Hindu law in most circumstances.</p>
+        </div>
+        <div class="card">
+          <div class="card-accent"></div>
+          <h4>Equal Inheritance</h4>
+          <p>Daughters would receive an equal share of ancestral property alongside sons — overturning a tradition that gave daughters a smaller share or nothing.</p>
+        </div>
+        <div class="card">
+          <div class="card-accent"></div>
+          <h4>Widow's Rights</h4>
+          <p>A widow's right to a full share in her husband's property would be legally protected, rather than subject to family discretion.</p>
+        </div>
+        <div class="card">
+          <div class="card-accent"></div>
+          <h4>End of Polygamy</h4>
+          <p>The Bill would have abolished polygamy among Hindus, making monogamy legally compulsory — a protection for women in plural marriages.</p>
+        </div>
+      </div>
+
+      <p>The opposition to the Bill within Parliament and within Nehru's own cabinet was fierce. Critics argued that it interfered with religious custom, that it went too far, that it would destabilise the family. The Bill was stalled and ultimately not passed in its comprehensive form during Ambedkar's tenure.</p>
+
+      <p>On 27 September 1951, Ambedkar resigned from the Cabinet. In his resignation statement, he explicitly cited the failure to pass the Hindu Code Bill as a central reason. He wrote that he could not continue as a member of a government that had deprived women of their legal rights in the name of political convenience.</p>
+
+      <div class="pull-quote">
+        <p>To leave inequality between class and class, between sex and sex, which is the soul of Hindu society, untouched and to go on passing legislation relating to economic problems is to make a farce of our Constitution.</p>
+        <div class="attribution">Dr. B. R. Ambedkar, resignation letter, October 1951 — cited in <a href="https://drambedkarfoundation.nic.in/" target="_blank" rel="noopener" style="color:var(--gold)">Dr. Ambedkar Foundation</a> archives</div>
+      </div>
+
+      <p>The Hindu Code was eventually passed in piecemeal form — the Hindu Marriage Act (1955), Hindu Succession Act (1956), Hindu Minority and Guardianship Act (1956), and Hindu Adoptions and Maintenance Act (1956) — after Ambedkar had left the cabinet. These Acts incorporated many of the reforms he had proposed, though not all. The Hindu Succession (Amendment) Act of <strong>2005</strong> finally gave daughters equal rights in ancestral property, in the direction Ambedkar had argued for in the 1940s and 1950s.</p>
+
+      <p>His advocacy for women's legal equality was not separate from his work on caste. He understood that caste and gender were intertwined systems of subordination, and that neither could be addressed in isolation from the other.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 7: WORKERS & OTHERS ════════════ -->
+<section class="section" id="workers" style="background:var(--parchment);">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Labour &amp; Minorities</div>
+      <h2>Workers, Minorities, and Tribal Communities</h2>
+
+      <h3>Labour Rights</h3>
+
+      <p>From 1942 to 1946, Ambedkar served as Labour Member of the Viceroy's Executive Council — effectively the minister responsible for labour policy across British India. This was a period of significant industrial activity, and Ambedkar used the position to advance workers' protections.</p>
+
+      <p>Among the legislation associated with his tenure, the <strong>Mines Maternity Benefit Act, 1941</strong> extended maternity protections to women working in mines. Ambedkar was involved in labour reform and amendments to such laws, working on measures related to the welfare of workers in difficult occupations, and introducing provisions for employment exchanges that would give workers better access to job information. He also advocated for the codification of a standard eight-hour workday across industries.</p>
+
+      <p>His understanding of labour issues was inseparable from his analysis of caste: the most dangerous, lowest-paid, and most exploited workers in colonial India were predominantly from lower-caste and Dalit communities. Protecting workers was, in part, protecting Dalits.</p>
+
+      <div class="fact-card">
+        <div class="fact-card-label">Labour &amp; Caste — A Connected Reality</div>
+        <p>In his early writing, Ambedkar argued that <strong>caste functioned as a form of labour control</strong>. By assigning occupations by birth and prohibiting mobility between occupations, caste ensured a permanent supply of degraded labour for the most unpleasant work. Any serious labour reform, he argued, had to reckon with this.</p>
+      </div>
+
+      <h3>Religious Minorities</h3>
+
+      <p>Articles 25 through 28 of the Constitution, which guarantee freedom of religion and protect minority religious practices, were drafted under Ambedkar's supervision. The Constitution Ambedkar built was explicitly pluralistic: it did not establish a state religion, it protected the right of minorities to maintain their cultural and educational institutions (<a href="https://www.constitutionofindia.net/articles/article-29-protection-of-interests-of-minorities" target="_blank" rel="noopener">Article 29</a>, <a href="https://www.constitutionofindia.net/articles/article-30-right-of-minorities-to-establish-and-administer-educational-institutions" target="_blank" rel="noopener">Article 30</a>), and it prohibited discrimination on the basis of religion.</p>
+
+      <h3>Scheduled Tribes</h3>
+
+      <p>The Constitution's provisions for Scheduled Tribes — including the Fifth and Sixth Schedules, which set out special governance arrangements for tribal areas — were part of the constitutional framework Ambedkar oversaw. The Fifth Schedule provides for the administration of scheduled areas and their governance through mechanisms designed to protect tribal communities from land alienation and administrative neglect. The Sixth Schedule provides for autonomous district councils in certain tribal regions of the northeast, with legislative and judicial powers.</p>
+
+      <p>These were not perfect instruments, and tribal communities have continued to face serious challenges in independent India. But the constitutional framework that Ambedkar built provided a legal basis for protections that would otherwise not have existed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 8: RESISTANCE ══════════════════ -->
+<section class="section" id="resistance">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Obstacles &amp; Difficulty</div>
+      <h2>The Resistance He Faced</h2>
+
+      <p>Ambedkar's public life was not a triumphant march from one achievement to the next. It was a sustained campaign conducted against significant opposition, from multiple directions.</p>
+
+      <h3>Caste Society's Refusal</h3>
+
+      <p>The casual cruelty of caste discrimination did not end when he became a scholar or a politician. When the Maharaja of Baroda — who had funded his education — summoned him back to serve in his administration in 1917, Ambedkar returned and was denied accommodation in virtually every inn and lodging house in Baroda because of his caste. He had to misrepresent himself as Parsi to find a room. The administrative experience was short-lived; he could not function within a society that refused him basic dignity, and he returned to Bombay.</p>
+
+      <p>Throughout his legal and political career, he faced the assumption — common in upper-caste society — that a Dalit man's views on law, economics, or governance were inherently less credible than those of upper-caste peers. His intellectual output, which was voluminous and of high quality, was in part a continuous argument against this assumption.</p>
+
+      <h3>Political Opposition</h3>
+
+      <p>The cancellation of the <em>Jat-Pat-Todak Mandal</em> conference — and with it, the suppression of the <em>Annihilation of Caste</em> address — was one example of how even reformist segments of Hindu society resisted his most direct arguments. The criticism from within the national movement was often more painful than that from overt opponents, because it came from people who claimed to share his general goals.</p>
+
+      <p>His relationship with Mahatma Gandhi was complex and publicly contested. Both men wanted an end to untouchability, but their analyses of caste and their proposed remedies were fundamentally different. Gandhi believed caste reform could come through the moral transformation of caste Hindus; Ambedkar believed that those who benefited from a system could not be trusted to dismantle it. This was not a personal quarrel — it was a substantive disagreement about the nature of social change and political power.</p>
+
+      <h3>Electoral Defeat</h3>
+
+      <p>Ambedkar stood for election to the Lok Sabha in the first general election of 1952, from Bombay North constituency, and was defeated. He stood again in a by-election in 1954, from Bhandara, and was defeated again. The man who had built the Constitution could not win a seat in the Parliament it created. He was elected to the Rajya Sabha in 1952, where he served until his death. The electoral defeats were a specific kind of political wound — a reminder that institutional power and popular support did not always align.</p>
+
+      <h3>The Hindu Code Bill</h3>
+
+      <p>His resignation over the Hindu Code Bill in 1951 was a recognition of political reality: that the reforms he considered essential for women's equality were not going to be enacted with him in the cabinet, because the political will was not there. He chose to leave rather than continue lending his name to a government he felt was not acting in good faith on one of its central commitments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTION 9: TODAY ═══════════════════════ -->
+<section class="section" id="today">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Continuing Relevance</div>
+      <h2>His Ideas in Contemporary India</h2>
+
+      <p>Ambedkar died on 6 December 1956, just weeks after his conversion to Buddhism. He had completed the manuscript of <em>The Buddha and His Dhamma</em>, published posthumously in 1957, and had lived to see the Constitution he drafted come into force — but not to see many of the reforms he sought completed.</p>
+
+      <p>The question of his contemporary relevance is not difficult to answer. The problems he diagnosed remain.</p>
+
+      <div class="two-col">
+        <div>
+          <h3>Caste Discrimination</h3>
+          <p>Caste-based violence and discrimination continue to be documented by government data, journalistic investigation, and academic research. The <a href="https://www.ncrb.gov.in/" target="_blank" rel="noopener">National Crime Records Bureau</a> records thousands of cases of crimes against Scheduled Castes annually. Manual scavenging — the most degrading of the occupations Ambedkar sought to abolish — has been formally prohibited by law but continues to be practised in parts of India, and workers continue to die in sewers and septic tanks. His analysis of why legal prohibition alone is insufficient without social and economic transformation remains urgently relevant.</p>
+        </div>
+        <div>
+          <h3>Constitutional Democracy</h3>
+          <p>His warning in 1949 about the "contradiction" between political equality and social inequality has not been resolved. He also warned — in the same speech — against the dangers of <em>bhakti</em> in politics: the personalisation of political loyalty to individuals rather than principles. His argument for institutions, for constitutional morality, and for critical citizenship remains a resource for those engaged with questions of democratic backsliding and majoritarian politics.</p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>Women's Equality</h3>
+          <p>The legal architecture Ambedkar built has been used as a basis for significant gains in women's rights — through court decisions, amendments, and legislation — in the decades since his death. But the gap between legal equality and substantive equality remains wide. His argument that legal reform is necessary but not sufficient, and must be accompanied by social and economic transformation, continues to describe the situation accurately.</p>
+        </div>
+        <div>
+          <h3>Economic Justice</h3>
+          <p>His early insight — that caste functions as an economic system, not merely a social one — is increasingly recognised in economics and development studies. Research on intergenerational poverty, occupational segregation, and access to credit in India consistently shows caste as a structural determinant. The economic analysis he developed at Columbia and the LSE anticipated findings that social science has confirmed in subsequent decades.</p>
+        </div>
+      </div>
+
+      <div class="fact-card" style="margin-top:2.5rem;">
+        <div class="fact-card-label">A Note on His Legacy</div>
+        <p>Dr. Ambedkar was awarded the <strong>Bharat Ratna</strong>, India's highest civilian honour, posthumously in 1990. His birthday, 14 April, is observed as <strong>Ambedkar Jayanti</strong> and is a public holiday in many Indian states. His portrait appears on commemorative ₹10 coins issued by the Government of India. The <a href="https://drambedkarfoundation.nic.in/" target="_blank" rel="noopener" style="color:var(--gold-light)">Dr. Ambedkar Foundation</a>, established by the Government of India in 1992, works to promote his ideas. These are forms of official recognition. They do not settle the debates he started.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TIMELINE ════════════════════════════════ -->
+<div class="timeline" id="timeline">
+  <div class="page-wrap">
+    <div class="section-label">Chronology</div>
+    <h2 style="font-size:clamp(1.8rem,3vw,2.4rem); color:var(--navy); margin-bottom:0.5rem;">A Life in Key Moments</h2>
+    <p style="color:var(--text-soft); font-size:0.95rem; margin-bottom:0;">Selected events from a career spanning four decades of public life.</p>
+
+    <div class="timeline-grid">
+
+      <div class="tl-item">
+        <div class="tl-year">1891</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Born in Mhow, Central Provinces</h4>
+          <p>14 April. Fourteenth child of Subedar Ramji Maloji Sakpal. Family of the Mahar caste, classified as "untouchable."</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1912</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Graduates from Elphinstone College, Bombay</h4>
+          <p>Among the first from his community to reach this level of formal education. Awarded a scholarship by the Maharaja of Baroda to study abroad.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1915–16</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>MA and early doctoral work at Columbia University</h4>
+          <p>Studies under John Dewey. Presents the paper <em>Castes in India: Their Mechanism, Genesis and Development</em> — an early sociological analysis of the caste system.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1920</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Founds <em>Mooknayak</em> newspaper</h4>
+          <p>One of the first Marathi-language newspapers specifically dedicated to representing Dalit voices and political interests.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1923</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>DSc from London School of Economics; called to the Bar</h4>
+          <p>His thesis <em>The Problem of the Rupee</em> is later cited in the history of the Reserve Bank of India's founding. Called to the Bar from Gray's Inn, London.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1924</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Founds Bahishkrit Hitakarini Sabha</h4>
+          <p>Organisation dedicated to the education and social advancement of "depressed class" communities in India.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1927</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Mahad Satyagraha</h4>
+          <p>Leads march to assert the right of Dalit communities to use the Chavadar public water tank in Mahad, Colaba. Later that year, the <em>Manusmriti</em> is publicly burned at a conference he convened.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1930–32</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Roundtable Conferences, London</h4>
+          <p>Represents the "depressed classes" at all three Roundtable Conferences convened by the British government to discuss India's constitutional future.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1932</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Poona Pact</h4>
+          <p>24 September. Negotiated agreement with Gandhi replacing separate electorates with reserved seats within joint electorates, after Gandhi's fast in protest of the Communal Award.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1936</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4><em>Annihilation of Caste</em> published</h4>
+          <p>After the Jat-Pat-Todak Mandal cancels its conference rather than allow his prepared address to be delivered, he publishes it independently. Becomes one of the most important texts in Indian political thought.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1942–46</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Labour Member, Viceroy's Executive Council</h4>
+          <p>Works on labour welfare legislation including maternity protections for mine workers, employment exchanges, and working conditions.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1947</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Appointed Law Minister; Chairman of Drafting Committee</h4>
+          <p>29 August: appointed Chairman of the Constitution's Drafting Committee. Simultaneously serves as India's first Law Minister in Nehru's cabinet.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1949</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Constitution of India adopted</h4>
+          <p>26 November: The Constitution is formally adopted by the Constituent Assembly. Now observed as <a href="https://legislative.gov.in/constitution-day" target="_blank" rel="noopener">Constitution Day</a>.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1951</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Resigns from Cabinet</h4>
+          <p>October: Resigns as Law Minister, citing failure to pass the Hindu Code Bill in its comprehensive form and other policy disagreements.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1956</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Conversion to Buddhism; Death</h4>
+          <p>14 October: Converts to Buddhism at Deekshabhoomi, Nagpur, with hundreds of thousands of followers. Completes <em>The Buddha and His Dhamma</em> manuscript. Dies 6 December 1956, in Delhi.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">1990</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <h4>Bharat Ratna awarded posthumously</h4>
+          <p>India's highest civilian honour awarded by the Government of India.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ SOURCES ════════════════════════════════ -->
+<section class="sources-section" id="sources">
+  <div class="page-wrap">
+    <div class="prose-wrap">
+      <div class="section-label">Scholarship &amp; Further Reading</div>
+      <h2 style="font-size:clamp(1.6rem,2.8vw,2.2rem); color:var(--navy); margin-bottom:0.5rem;">Sources &amp; Further Reading</h2>
+      <p style="color:var(--text-soft); font-size:0.92rem; margin-bottom:1.5rem;">Primary sources, constitutional texts, official archives, and scholarly works consulted in the preparation of this page.</p>
+
+      <ul class="sources-list">
+        <li>
+          <strong>Constituent Assembly Debates, Volume XI, 25 November 1949</strong> — Ambedkar's final address to the Constituent Assembly before adoption of the Constitution.
+          <a href="https://www.constitutionofindia.net/constitution_assembly_debates/volume/11/1949-11-25" target="_blank" rel="noopener">constitutionofindia.net →</a>
+        </li>
+        <li>
+          <strong>Constitution of India — Full Text</strong> — Government of India, official portal.
+          <a href="https://www.india.gov.in/my-government/constitution-india" target="_blank" rel="noopener">india.gov.in →</a>
+        </li>
+        <li>
+          <strong>Ambedkar, B. R. — <em>Annihilation of Caste</em> (1936)</strong> — The original undelivered address, as published by Ambedkar himself.
+          <a href="https://www.scribd.com/document/340152005/Annihilation-of-Caste-by-Dr-B-R-Ambedkar" target="_blank" rel="noopener">scribd.com →</a>
+        </li>
+        <li>
+          <strong>Ambedkar, B. R. — <em>Castes in India: Their Mechanism, Genesis and Development</em> (1916)</strong> — Paper presented at a Columbia University seminar.
+          <a href="https://www.columbia.edu/itc/mealac/pritchett/00ambedkar/txt_ambedkar_castes.html" target="_blank" rel="noopener">columbia.edu →</a>
+        </li>
+        <li>
+          <strong>Dr. Ambedkar Foundation</strong> — Government of India body established in 1992, maintaining archives and scholarly work related to his life.
+          <a href="https://drambedkarfoundation.nic.in/" target="_blank" rel="noopener">drambedkarfoundation.nic.in →</a>
+        </li>
+        <li>
+          <strong>Reserve Bank of India — History</strong> — The RBI's own account of its intellectual and institutional origins, which references Ambedkar's monetary writings.
+          <a href="https://www.rbi.org.in/Scripts/AboutUsDisplay.aspx" target="_blank" rel="noopener">rbi.org.in →</a>
+        </li>
+        <li>
+          <strong>Columbia University — Ambedkar at Columbia</strong> — The university's documentation of his studies and their significance.
+          <a href="https://globalcenters.columbia.edu/ambedkar" target="_blank" rel="noopener">columbia.edu →</a>
+        </li>
+        <li>
+          <strong>National Crime Records Bureau — Crime in India</strong> — Annual data on crimes against Scheduled Castes and Scheduled Tribes.
+          <a href="https://www.ncrb.gov.in/" target="_blank" rel="noopener">ncrb.gov.in →</a>
+        </li>
+        <li>
+          <strong>Zelliot, Eleanor — <em>From Untouchable to Dalit: Essays on the Ambedkar Movement</em> (1992)</strong> — Scholarly historical study; Manohar Publishers, New Delhi.
+        </li>
+        <li>
+          <strong>Omvedt, Gail — <em>Ambedkar: Towards an Enlightened India</em> (2004)</strong> — Viking/Penguin India. A scholarly biography.
+        </li>
+        <li>
+          <strong>Constitution Day — Legislative Department, Government of India</strong>
+          <a href="https://legislative.gov.in/constitution-day" target="_blank" rel="noopener">legislative.gov.in →</a>
+        </li>
+      </ul>
+
+      <div class="ornament" style="margin-top:2.5rem; opacity:0.3;">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+      <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.7; margin-top:1rem;">
+        <strong>Editorial note:</strong> This page is intended as an educational introduction. Every claim on this page has been included on the basis of verifiable sources. Where exact wording of quotations has been used, the source has been cited and linked. The complexity of Ambedkar's thought cannot be fully represented here; readers are encouraged to read his primary texts, which are largely available online without cost.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ══════════════════════════════════ -->
+<footer>
+  <div class="page-wrap">
+    <p>This page was produced as a public educational resource. All sources are linked and attributed above.</p>
+    <p>Portrait and site photographs sourced from <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> under public domain and Creative Commons licences.</p>
+    <p style="margin-top:1rem; opacity:0.5; font-size:0.75rem;">
+      Dr. Bhimrao Ramji Ambedkar • 14 April 1891 – 6 December 1956
+    </p>
+  </div>
+</footer>
+
+
+</body></html>
