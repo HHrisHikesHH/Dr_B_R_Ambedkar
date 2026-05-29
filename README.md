@@ -10,7 +10,7 @@ It explains in simple and respectful language his important contributions to Ind
 
 ### Easy Way (Recommended)
 Just click this link:  
-**[👉 Open the Ambedkar Page](https://hrishikeshio.github.io/Dr-B-R-Ambedkar-Architect-of-a-Just-India/)**
+**[👉 Open the Ambedkar Page]([https://hrishikeshio.github.io/Dr-B-R-Ambedkar-Architect-of-a-Just-India/](https://hhrishikeshh.github.io/Dr_B_R_Ambedkar/Dr.%20B.%20R.%20Ambedkar%20%E2%80%94%20Architect%20of%20a%20Just%20India.html)**
 
 *(The page will open in your browser like any normal website)*
 
